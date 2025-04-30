@@ -28,3 +28,23 @@
     D. `false` | === is strict equality — no type conversion allowed<br>
     E. `false` | 'true' is converted to 1 <br>
     F. `true` | Boolean(2) → true (because 2 is truthy)<br>
+
+15. == is called the loose equality operator. It compares two values after converting them to the same type if they’re different. === is called the strict equality operator. It checks whether two values are exactly the same, both in value and in type.
+17. The function call `modifyArray([1, 2, 3], doSomething)` returns `[2, 4, 6]`. <br>
+
+Here's how it works step by step:<br>
+
+1. The `modifyArray` function takes two parameters: an array `[1, 2, 3]` and a callback function `doSomething`.
+2. Inside the function, a new empty array `newArr` is created.
+3. A `for` loop goes through each element of the input array.
+4. For each element, it calls the `callback` function (which is `doSomething`) on that element.
+5. The result of the callback is pushed into `newArr`.
+
+The callback function `doSomething(num)` simply returns `num * 2`.<br>
+
+So:<br>
+- `doSomething(1)` → `2`<br>
+- `doSomething(2)` → `4`<br>
+- `doSomething(3)` → `6`<br>
+
+Final `newArr` becomes `[2, 4, 6]`.<br>
