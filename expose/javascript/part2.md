@@ -48,3 +48,11 @@ So:<br>
 - `doSomething(3)` → `6`<br>
 
 Final `newArr` becomes `[2, 4, 6]`.<br>
+
+19. Output for the given code is as follows:- <br>
+```
+1
+4
+3
+2
+```
